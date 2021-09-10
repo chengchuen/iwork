@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Context>
+<Context reloadable="true" crossContext="true">
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+	<Resource name="jdbc/work" auth="Container" type="javax.sql.DataSource"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		url="jdbc:mysql://10.128.202.245:3306/pdatam?autoReconnect=true&amp;allowMultiQueries=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;mysqlEncoding=utf8"
+		validationQuery="select 1" testWhileIdle="true" testOnBorrow="false"
+		username="datam" password="DATAM@caitc!qwer9" maxTotal="20" maxIdle="10" />
+		
+<!--	<Resource name="jdbc/fdm" auth="Container" type="javax.sql.DataSource"-->
+<!--		driverClassName="oracle.jdbc.driver.OracleDriver" url="jdbc:oracle:thin:@10.128.202.17:1521:orcl"-->
+<!--		username="FDM" password="FDM" maxActive="20" maxIdle="10"-->
+<!--		maxWait="-1" />-->
+</Context>
